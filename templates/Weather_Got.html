@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+    <title>{{city}} Weather</title>
+</head>
+<body>
+    <h1>{{city}}'s Weather</h1>
+    <p>{{status}}</p>
+    <p>Temperature: {{celsius_temp}}&deg;C 
+        Feels like: {{celsius_feels_like}}&deg;C</p>
+
+    
+    <form action="/weather">
+        <input type="text" name="country" id="country" 
+        placeholder="Enter a country name:"/><br><br>
+
+        <input type="text" name="city" id="city" 
+        placeholder="Enter a city name:"/><br><br>
+
+        <button type="submit">SUBMIT</button>
+    </form>
+    <p></p>
+</body>
+</html>
